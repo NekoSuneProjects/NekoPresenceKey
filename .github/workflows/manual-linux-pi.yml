@@ -40,6 +40,7 @@ jobs:
       - name: Upload Linux x64
         uses: actions/upload-artifact@v4
         with:
+          retention-days: 1
           name: NekoPresenceKey-Linux-x64
           path: dist/nekopresence-linux-amd64
           if-no-files-found: error
@@ -67,6 +68,7 @@ jobs:
       - name: Upload Raspberry Pi ARM64
         uses: actions/upload-artifact@v4
         with:
+          retention-days: 1
           name: NekoPresenceKey-RaspberryPi-ARM64
           path: dist/nekopresence-linux-arm64
           if-no-files-found: error
